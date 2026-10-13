@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Project title — Justin Parry</title>
+<meta name="theme-color" content="#0b0c0d">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono&display=swap">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- Copy this file for each project, then fill in the text and swap the image boxes for photos. -->
+
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><i></i>Justin Parry</a>
+    <button class="menu" id="menu" aria-expanded="false" aria-controls="links">Menu <span></span></button>
+    <ul class="links" id="links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#experience">Experience</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+      <li><a class="btn" href="../resume.pdf">Résumé ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <header class="proj-hero dark">
+    <div class="wrap">
+      <a class="back label" href="../index.html#projects">← All projects</a>
+      <h1>Project title<span style="color:var(--amber)">.</span></h1>
+      <p class="ph">One or two sentences on what this is and why it exists.</p>
+      <dl class="spec">
+        <div><dt>Role</dt><dd class="ph">Solo / team role</dd></div>
+        <div><dt>Tools</dt><dd class="ph">Altium · KiCad</dd></div>
+        <div><dt>Timeline</dt><dd class="ph">Semester / year</dd></div>
+        <div><dt>Status</dt><dd class="ph">Complete</dd></div>
+      </dl>
+    </div>
+  </header>
+
+  <section class="proj-media dark">
+    <div class="wrap">
+      <!-- Replace with: <img src="../images/your-photo.jpg" alt="Describe the photo"> -->
+      <div class="slot"><span>Hero photo · finished build</span></div>
+    </div>
+  </section>
+
+  <section class="writeup light" style="padding-top:24px">
+    <div class="wrap">
+      <div class="block">
+        <span class="num">01</span>
+        <h2>Problem</h2>
+        <div><p class="ph">What were you trying to build, and why? Who needed it, and what did it have to do?</p></div>
+      </div>
+      <div class="block">
+        <span class="num">02</span>
+        <h2>Requirements</h2>
+        <div>
+          <p class="note">List the constraints you designed against. Numbers make this section credible.</p>
+          <ul>
+            <li class="ph">Input voltage, power, or current targets</li>
+            <li class="ph">Size, mass, or cost limits</li>
+            <li class="ph">Environment (temperature, vibration, RF)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="block">
+        <span class="num">03</span>
+        <h2>Design</h2>
+        <div>
+          <p class="note">Key decisions and the tradeoffs behind them: topology, part selection, layout choices.</p>
+          <div class="slot"><span>Schematic / PCB render</span></div>
+        </div>
+      </div>
+      <div class="block">
+        <span class="num">04</span>
+        <h2>Build</h2>
+        <div>
+          <p class="note">Assembly, harnessing, enclosure. Photos of the board and the build in progress.</p>
+          <div class="slot"><span>Build photos</span></div>
+        </div>
+      </div>
+      <div class="block">
+        <span class="num">05</span>
+        <h2>Testing &amp; results</h2>
+        <div>
+          <p class="note">Scope captures, measured vs. expected values, efficiency or noise numbers. Engineers read this section most closely.</p>
+          <div class="slot"><span>Test data / scope capture</span></div>
+        </div>
+      </div>
+      <div class="block">
+        <span class="num">06</span>
+        <h2>Lessons</h2>
+        <div><p class="note">What went wrong, how you fixed it, and what you'd change in a second revision.</p></div>
+      </div>
+      <div class="block">
+        <span class="num">07</span>
+        <h2>Files</h2>
+        <div>
+          <ul>
+            <li><a href="https://github.com/RiseOn33">GitHub repository</a></li>
+            <li class="ph">Bill of materials</li>
+            <li class="ph">Design files (if shareable)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="dark">
+  <div class="wrap label">
+    <span>© 2026 Justin Parry</span>
+    <a href="../index.html#projects">← All projects</a>
+  </div>
+</footer>
+
+<script>
+  var nav = document.getElementById("nav"), btn = document.getElementById("menu");
+  btn.onclick = function () { btn.setAttribute("aria-expanded", nav.classList.toggle("open")); };
+  document.getElementById("links").onclick = function (e) { if (e.target.closest("a")) { nav.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); } };
+</script>
+</body>
+</html>
