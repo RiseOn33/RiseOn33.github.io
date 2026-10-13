@@ -1,60 +1,32 @@
-# Portfolio site
+# Justin Parry · Electrical Engineering
 
-Plain HTML and CSS. No build tools, no frameworks. Hosted free on GitHub Pages.
+Welcome! This is the source for my personal portfolio site.
 
-## Put it online (one time, ~5 minutes)
+**Live site: [riseon33.github.io](https://riseon33.github.io)**
 
-1. Sign in to GitHub and create a **new repository** named exactly `your-username.github.io`
-   (replace `your-username` with your GitHub username). Make it **Public**.
-2. On the new repo page, click **"uploading an existing file"**.
-3. Unzip this folder on your computer and drag **everything inside it** (index.html, css/, projects/, images/, README.md) into the upload area. Click **Commit changes**.
-4. Go to **Settings → Pages**. Under "Build and deployment", source should be **Deploy from a branch**, branch **main**, folder **/ (root)**. Save if it isn't already.
-5. Wait a minute or two, then visit `https://your-username.github.io`.
+I'm an electrical engineering student at the University of Georgia. I work on spacecraft hardware,
+PCB design, RF/EMC, and systems engineering. This site collects my experience and the projects
+I've worked on, from flight PCBs for a CubeSat to client boards and team builds.
 
-To update the site later, edit a file on GitHub (pencil icon) or upload a replacement, then commit. It redeploys automatically.
+If you'd like to talk about a role, a project, or anything hardware, reach out:
 
-## Folder layout
+- Email: JustinParry04@gmail.com
+- LinkedIn: [justin-t-parry](https://www.linkedin.com/in/justin-t-parry)
+
+---
+
+## About this site
+
+Hand-written HTML and CSS with one small script for the mobile menu. No frameworks and no build
+step, so it loads fast. Hosted on GitHub Pages.
 
 ```
-index.html                 Home page: about, experience, projects, skills, education, contact
-css/style.css              All styling (colors and fonts are at the top)
-projects/
-  project-template.html    Blank write-up. Copy this for each new project.
-images/                    Put your photos here
-resume.pdf                 Add your résumé here (the About section links to it)
+index.html                 Home page
+css/style.css              All styling
+projects/                  One page per project write-up
+images/                    Photos and renders
+resume.pdf                 Résumé
 ```
 
-## How the home page is organized
-
-Sections, top to bottom: About, Experience (most recent first), Projects (card grid),
-Skills (grouped), Education (with relevant coursework), Contact.
-Text with a dashed underline is placeholder copy: replace it and delete `class="ph"`.
-To add another job, project card, or course, copy an existing block and edit it.
-
-## Things to edit first
-
-- **Your content**: filled in from your résumé. Remaining placeholders have a dashed underline.
-- **Headshot**: add `images/headshot.jpg` and swap it into the hero (see the comment there).
-- **Contact links**: the `#contact` section in index.html (email, GitHub, LinkedIn).
-- **Résumé**: upload your PDF as `resume.pdf` in the root folder.
-
-## Adding a project
-
-1. Copy `projects/project-template.html` to a new name, like `projects/buck-converter.html`, and fill it in.
-2. In index.html, copy one `<a class="pcard">` block in the Projects section, point its `href` at the new page, and update the text.
-
-## Adding photos
-
-Put images in `images/`, then replace a placeholder:
-
-```html
-<!-- on index.html project cards: replace <div class="slot">...</div> with -->
-<img class="media" src="images/cubesat.jpg" alt="Printed 1U frame on the bench">
-
-<!-- on project pages (note the ../) -->
-<img src="../images/cubesat.jpg" alt="Printed 1U frame on the bench">
-```
-
-Resize photos to about 1600 px wide before uploading so pages load fast on phones.
-
-Check with SSRL before posting lab design files or anything sensitive.
+To add a project, copy `projects/project-template.html`, fill it in, and add a card to the
+Projects section of `index.html`.
