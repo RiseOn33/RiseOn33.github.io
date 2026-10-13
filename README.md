@@ -27,6 +27,3 @@ projects/                  One page per project write-up
 images/                    Photos and renders
 resume.pdf                 Résumé
 ```
-
-To add a project, copy `projects/project-template.html`, fill it in, and add a card to the
-Projects section of `index.html`.
